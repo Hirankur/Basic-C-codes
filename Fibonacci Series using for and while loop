@@ -1,0 +1,48 @@
+//USING WHILE LOOP
+#include<stdio.h>
+
+int main()
+{
+int n,i=0,first=0,second=1;
+    printf("Enter the number of terms in the Fibonacci series: ");
+    scanf("%d", &n);
+
+    printf("Fibonacci Series: ");
+
+
+    while(i<n)
+    {
+
+        printf("%d ",first);
+        int temp = first + second;
+        first = second;
+        second = temp;
+        i++;
+
+    }
+    printf("\n");
+    }
+
+
+//USING FOR LOOP
+
+#include<stdio.h>
+int main()
+
+{
+    int n,i,first=0,second=1;
+    printf("Enter the number of terms in the Fibonacci series: ");
+    scanf("%d", &n);
+
+    printf("Fibonacci Series: ");
+
+     for(i=0;i<n;i++)
+      {
+
+        printf("%d ",first);
+        int temp = first + second;
+        first = second;
+        second = temp;
+       }
+    printf("\n");
+}
